@@ -1,0 +1,85 @@
+section {
+    height: 98vh;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+#contenedor {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one {
+    background-image: url(../body/img/fondoRickOwens.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #669999;
+    margin: 1%;
+    border: 5px rgb(0, 0, 0) solid;
+}
+
+.second {
+    background-image: url(../body/img/fondoKaws.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: darkgoldenrod;
+    margin: 1%;
+    border: 5px rgb(0, 0, 0) solid;
+}
+
+.three {
+    background-image: url(../body/img/fondoOffWhite.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: blueviolet;
+    margin: 1%;
+    border: 5px rgb(0, 0, 0) solid;
+}
+
+.four {
+    background-image: url(../body/img/fondoAmbush.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: brown;
+    margin: 1%;
+    border: 5px rgb(0, 0, 0) solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(71, 63, 63);
+}
+
+th {
+    background-color: #780000;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    color: #000000;
+    cursor: pointer;
+}

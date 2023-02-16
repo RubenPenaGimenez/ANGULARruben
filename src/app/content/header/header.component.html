@@ -1,0 +1,11 @@
+<main id="container">
+  <nav class="navbar navbar navbar-expand-lg border border-3 border-danger" id="cabecera">
+    <main class="container-fluid">
+      <p>{{ estilista }}</p>
+    </main>
+  </nav>
+  <button id="botones" (click)="estilista = 'Rick Owens'" [ngClass]="{'boton-activo': estilista === 'Rick Owens'}">RickOwens</button>
+  <button id="botones" (click)="estilista = 'Kaws'" [ngClass]="{'boton-activo': estilista === 'Kaws'}">Kaws</button>
+  <button id="botones" (click)="estilista = 'Virgil Abloh'" [ngClass]="{'boton-activo': estilista === 'Virgil ABloh'}">Virgil Abloh</button>
+  <button id="botones" (click)="estilista = 'Yoon Ahn'" [ngClass]="{'boton-activo': estilista === 'Yoon Ahn'}">YoonAhn</button>
+</main>

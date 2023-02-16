@@ -1,0 +1,116 @@
+<body>
+  <div id="contenedor">
+
+    <section class="one">
+      <h1>{{ tablaRickOwens }}</h1>
+      &nbsp;
+      <table>
+        <br>
+        <thead>
+          <tr>
+            <th class="text text-center">NOMBRE</th>
+            <th class="text text-center">EDAD&nbsp;</th>
+            <th class="text text-center">MARCA</th>
+            <th class="text text-center">&nbsp;PATRIMONIO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let disenador of disenadores; let i = index">
+            <ng-container *ngIf= "i === 0">
+              <td class="text text-center">{{ disenador.nombre }}&nbsp;</td>
+              <td class="text text-center">{{ disenador.edad }}</td>
+              <td class="text text-center">{{ disenador.marca }}</td>
+              <td class="text text-center">&nbsp;{{ disenador.patrimonio }}</td>
+            </ng-container>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <section class="second">
+      <table>
+        <br>
+        <thead>
+          <tr>
+            <th class="text text-center">NOMBRE</th>
+            <th class="text text-center">EDAD&nbsp;</th>
+            <th class="text text-center">MARCA</th>
+            <th class="text text-center">&nbsp;PATRIMONIO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text text-center">{{ disenadores[1].nombre }}&nbsp;</td>
+            <td class="text text-center">{{ disenadores[1].edad }}</td>
+            <td class="text text-center">{{ disenadores[1].marca }}</td>
+            <td class="text text-center">{{ disenadores[1].patrimonio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="three">
+      <table>
+        <br>
+        <thead>
+          <tr>
+            <th class="text text-center">NOMBRE</th>
+            <th class="text text-center">EDAD&nbsp;</th>
+            <th class="text text-center">MARCA</th>
+            <th class="text text-center">&nbsp;PATRIMONIO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text text-center">{{ disenadores[2].nombre }}&nbsp;</td>
+            <td class="text text-center">{{ disenadores[2].edad }}</td>
+            <td class="text text-center">{{ disenadores[2].marca }}</td>
+            <td class="text text-center">&nbsp;{{ disenadores[2].patrimonio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="four">
+      <table>
+        <br>
+        <thead>
+          <tr>
+            <th class="text text-center">NOMBRE</th>
+            <th class="text text-center">EDAD&nbsp;</th>
+            <th class="text text-center">MARCA</th>
+            <th class="text text-center">&nbsp;PATRIMONIO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text text-center">{{ disenadores[3].nombre }}&nbsp;</td>
+            <td class="text text-center">{{ disenadores[3].edad }}</td>
+            <td class="text text-center">{{ disenadores[3].marca }}</td>
+            <td class="text text-center">&nbsp;{{ disenadores[3].patrimonio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+
+<!--
+
+  <h1>{{ tablaTitulo }}</h1>
+  <table class="default">
+    <tr>
+      <th>ID</th>
+      <th>NOMBRE</th>
+    </tr>
+    <tr>
+      <td>{{ profesor1.id }}</td>
+      <td>{{ profesor1.nombre }}</td>
+    </tr>
+    <tr>
+      <td>{{ profesor2.id }}</td>
+      <td>{{ profesor2.nombre }}</td>
+    </tr>
+  </table>
+
+-->
